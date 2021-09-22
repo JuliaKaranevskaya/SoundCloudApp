@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		C1EEFA9226FAF17900B56DCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EEFA9126FAF17900B56DCF /* AppDelegate.swift */; };
 		C1EEFA9426FAF17900B56DCF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EEFA9326FAF17900B56DCF /* SceneDelegate.swift */; };
-		C1EEFA9626FAF17900B56DCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EEFA9526FAF17900B56DCF /* ViewController.swift */; };
+		C1EEFA9626FAF17900B56DCF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EEFA9526FAF17900B56DCF /* LoginViewController.swift */; };
 		C1EEFA9926FAF17900B56DCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1EEFA9726FAF17900B56DCF /* Main.storyboard */; };
 		C1EEFA9C26FAF17900B56DCF /* SoundCloudApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1EEFA9A26FAF17900B56DCF /* SoundCloudApp.xcdatamodeld */; };
 		C1EEFA9E26FAF17E00B56DCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1EEFA9D26FAF17E00B56DCF /* Assets.xcassets */; };
 		C1EEFAA126FAF17E00B56DCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1EEFA9F26FAF17E00B56DCF /* LaunchScreen.storyboard */; };
+		C1EEFAA926FB222E00B56DCF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EEFAA826FB222E00B56DCF /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C1EEFA8E26FAF17900B56DCF /* SoundCloudApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundCloudApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1EEFA9126FAF17900B56DCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1EEFA9326FAF17900B56DCF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C1EEFA9526FAF17900B56DCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C1EEFA9526FAF17900B56DCF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C1EEFA9826FAF17900B56DCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C1EEFA9B26FAF17900B56DCF /* SoundCloudApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SoundCloudApp.xcdatamodel; sourceTree = "<group>"; };
 		C1EEFA9D26FAF17E00B56DCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1EEFAA026FAF17E00B56DCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1EEFAA226FAF17E00B56DCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1EEFAA826FB222E00B56DCF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,8 @@
 			children = (
 				C1EEFA9126FAF17900B56DCF /* AppDelegate.swift */,
 				C1EEFA9326FAF17900B56DCF /* SceneDelegate.swift */,
-				C1EEFA9526FAF17900B56DCF /* ViewController.swift */,
+				C1EEFA9526FAF17900B56DCF /* LoginViewController.swift */,
+				C1EEFAA826FB222E00B56DCF /* Extensions.swift */,
 				C1EEFA9726FAF17900B56DCF /* Main.storyboard */,
 				C1EEFA9D26FAF17E00B56DCF /* Assets.xcassets */,
 				C1EEFA9F26FAF17E00B56DCF /* LaunchScreen.storyboard */,
@@ -140,7 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1EEFA9626FAF17900B56DCF /* ViewController.swift in Sources */,
+				C1EEFAA926FB222E00B56DCF /* Extensions.swift in Sources */,
+				C1EEFA9626FAF17900B56DCF /* LoginViewController.swift in Sources */,
 				C1EEFA9226FAF17900B56DCF /* AppDelegate.swift in Sources */,
 				C1EEFA9426FAF17900B56DCF /* SceneDelegate.swift in Sources */,
 				C1EEFA9C26FAF17900B56DCF /* SoundCloudApp.xcdatamodeld in Sources */,

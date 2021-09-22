@@ -1,24 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="SoundCloudApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background Glow" translatesAutoresizingMaskIntoConstraints="NO" id="COg-31-TaF">
+                                <rect key="frame" x="0.0" y="-17" width="414" height="913"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vector" translatesAutoresizingMaskIntoConstraints="NO" id="MfJ-4I-apX">
+                                <rect key="frame" x="36" y="81" width="71" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39.990000000000002" id="6D7-Uy-EW7"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="39.990000000000002" id="Bwi-JZ-FL2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="71" id="IG4-9k-JVQ"/>
+                                    <constraint firstAttribute="width" constant="71" id="SbR-dU-ZgZ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Log in to SoundCloud" translatesAutoresizingMaskIntoConstraints="NO" id="Qra-zb-CRf">
+                                <rect key="frame" x="46" y="281" width="322" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HPR-Gi-JnV"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kQb-Fq-SwR">
+                                <rect key="frame" x="24" y="381" width="366" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="r7y-12-qgM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JWK-gt-pm6">
+                                <rect key="frame" x="24" y="441" width="366" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gGc-IT-IKu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbJ-co-cd4">
+                                <rect key="frame" x="24" y="737" width="366" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="OyZ-e2-8db"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Login" backgroundImage="loginInactive"/>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ija-Ag-t99"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SOUNDCLOUD" translatesAutoresizingMaskIntoConstraints="NO" id="fz4-dK-1r2">
+                                <rect key="frame" x="117" y="89" width="261" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="wIW-3a-kgB"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qra-zb-CRf" firstAttribute="top" secondItem="MfJ-4I-apX" secondAttribute="bottom" constant="160" id="28z-dB-Wtu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qra-zb-CRf" secondAttribute="trailing" constant="46" id="2dB-0L-yc4"/>
+                            <constraint firstItem="COg-31-TaF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-61" id="3KH-Jr-ocG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="COg-31-TaF" secondAttribute="trailing" id="3pn-np-EOj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kQb-Fq-SwR" secondAttribute="trailing" constant="24" id="5iy-OD-sp5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tbJ-co-cd4" secondAttribute="trailing" constant="24" id="7ig-lb-vFm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JWK-gt-pm6" secondAttribute="trailing" constant="24" id="8rB-YR-xqd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tbJ-co-cd4" secondAttribute="bottom" constant="75" id="AjV-yE-bCK"/>
+                            <constraint firstItem="tbJ-co-cd4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Ebv-Js-Tee"/>
+                            <constraint firstItem="fz4-dK-1r2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="Egz-Cl-upB"/>
+                            <constraint firstItem="MfJ-4I-apX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="JRV-iF-E35"/>
+                            <constraint firstItem="kQb-Fq-SwR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="NHE-2x-RM8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fz4-dK-1r2" secondAttribute="trailing" constant="36" id="PIC-xI-3eL"/>
+                            <constraint firstItem="JWK-gt-pm6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="PQW-8n-8bl"/>
+                            <constraint firstItem="fz4-dK-1r2" firstAttribute="leading" secondItem="MfJ-4I-apX" secondAttribute="trailing" constant="10" id="QN9-cI-UEN"/>
+                            <constraint firstItem="MfJ-4I-apX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="37" id="SCx-MO-ih1"/>
+                            <constraint firstItem="COg-31-TaF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Z2l-qc-L0f"/>
+                            <constraint firstItem="JWK-gt-pm6" firstAttribute="top" secondItem="kQb-Fq-SwR" secondAttribute="bottom" constant="10" id="Zjr-38-7nA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="COg-31-TaF" secondAttribute="bottom" constant="-34" id="dFq-QI-xBj"/>
+                            <constraint firstItem="Qra-zb-CRf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="lCB-fv-Out"/>
+                            <constraint firstItem="kQb-Fq-SwR" firstAttribute="top" secondItem="Qra-zb-CRf" secondAttribute="bottom" constant="50" id="w0E-QW-6YY"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="tbJ-co-cd4" id="BeG-ue-Dbp"/>
+                        <outlet property="loginTextField" destination="kQb-Fq-SwR" id="Xk2-gf-CSj"/>
+                        <outlet property="passwordTextField" destination="JWK-gt-pm6" id="U3U-CY-euu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background Glow" width="320" height="568"/>
+        <image name="Log in to SoundCloud" width="225" height="23"/>
+        <image name="SOUNDCLOUD" width="166" height="19"/>
+        <image name="Vector" width="71" height="40"/>
+        <image name="loginInactive" width="269" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
